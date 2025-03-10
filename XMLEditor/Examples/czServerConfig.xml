@@ -16,7 +16,7 @@
   <AllowedZoneVersions>
     <Version>b.30</Version>
   </AllowedZoneVersions>
-  <ZoneKey>cz</ZoneKey>
+  <ZoneKey>tvz1000</ZoneKey>
   <CustomZoneSceneFilename>DesertZone.pck</CustomZoneSceneFilename>
   <CustomZoneDLL>DesertZone.dll</CustomZoneDLL>
   <CustomZoneSceneName>DesertZone/Scenes/Zone.tscn</CustomZoneSceneName>

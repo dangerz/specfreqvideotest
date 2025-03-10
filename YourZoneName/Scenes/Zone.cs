@@ -15,7 +15,7 @@ public partial class Zone : CustomZone
 
         GD.Print("Your Zone _ZoneSetup()");
 
-        SpecFreqAPI.SceneKey = "yz"; // this must match what's in your config file
+        SpecFreqAPI.SceneKey = "tvz1000"; // this must match what's in your config file
         SpecFreqAPI.UpperSpecLimit = new Vector3(200, 0, 200);
         SpecFreqAPI.LowerSpecLimit = new Vector3(-200, 0, -200);
         SpecFreqAPI.CloudsEnabled = false;
