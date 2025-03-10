@@ -13,5 +13,5 @@
   <ZoneKey>tvz1000</ZoneKey>
   <Database>sqlite</Database>
   <SQLLiteConnectionString>Data Source=serverDatabase.db; Version = 3; New = True; Compress = True;</SQLLiteConnectionString>
-  <MySQLConnectionString>Server=specfreqgame.com;Port=3306;Database=specfreq;Userid=specfreq;Password=N!Zd@Sk9E/r4Qc();</MySQLConnectionString>
+  <MySQLConnectionString>Server=specfreqgame.com;Port=3306;Database=specfreq;Userid=specfreq;Password=nicetryialreadydeletedit</MySQLConnectionString>
 </config>
