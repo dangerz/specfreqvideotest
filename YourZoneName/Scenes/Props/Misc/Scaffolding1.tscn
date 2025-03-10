@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://buux328cmr65i"]
+
+[ext_resource type="Texture2D" uid="uid://b16kf0g1742og" path="res://YourZoneName/3d/Props/isl_Color_A.jpg" id="1"]
+[ext_resource type="ArrayMesh" uid="uid://nrf78rebevnj" path="res://YourZoneName/3d/Props/isl_Scaffolding_01_DEF.obj" id="2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6njc2"]
+albedo_texture = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="2"]
+size = Vector3(3.66504, 6.1182, 1.47121)
+
+[node name="Scaffolding" type="StaticBody3D"]
+collision_layer = 8
+
+[node name="isl_Scaffolding_01_DEF" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+mesh = ExtResource("2")
+surface_material_override/0 = SubResource("StandardMaterial3D_6njc2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.05514, 0)
+shape = SubResource("2")

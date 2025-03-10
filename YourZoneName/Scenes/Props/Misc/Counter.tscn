@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://cfrvamuwl8gw2"]
+
+[ext_resource type="Texture2D" uid="uid://b16kf0g1742og" path="res://YourZoneName/3d/Props/isl_Color_A.jpg" id="1"]
+[ext_resource type="ArrayMesh" uid="uid://d1fwssgjfhuda" path="res://YourZoneName/3d/Props/isl_Checkout_01_DEF.obj" id="2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yudfa"]
+albedo_texture = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="2"]
+size = Vector3(3.97346, 2, 0.990056)
+
+[sub_resource type="BoxShape3D" id="3"]
+size = Vector3(1.09561, 2, 1.16705)
+
+[node name="Checkout" type="StaticBody3D"]
+collision_layer = 8
+
+[node name="isl_Checkout_01_DEF" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+mesh = ExtResource("2")
+surface_material_override/0 = SubResource("StandardMaterial3D_yudfa")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00625753, 0, -0.441606)
+shape = SubResource("2")
+
+[node name="CollisionShape2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.43835, 0, 0.366035)
+shape = SubResource("3")

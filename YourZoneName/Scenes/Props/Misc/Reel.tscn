@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://df4guwg0esr85"]
+
+[ext_resource type="Texture2D" uid="uid://b16kf0g1742og" path="res://YourZoneName/3d/Props/isl_Color_A.jpg" id="1"]
+[ext_resource type="ArrayMesh" uid="uid://dbgjwdg1van0" path="res://YourZoneName/3d/Props/isl_Reel_01_DEF.obj" id="2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dxwwm"]
+albedo_texture = ExtResource("1")
+
+[sub_resource type="CylinderShape3D" id="2"]
+radius = 1.95249
+
+[node name="Reel" type="StaticBody3D"]
+collision_layer = 8
+
+[node name="Reel" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, -0.0474414, 0)
+mesh = ExtResource("2")
+surface_material_override/0 = SubResource("StandardMaterial3D_dxwwm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.961057, 0)
+shape = SubResource("2")

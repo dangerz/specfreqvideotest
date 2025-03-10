@@ -1,0 +1,220 @@
+[gd_scene load_steps=11 format=3 uid="uid://bw6ibxpj278mx"]
+
+[ext_resource type="Texture2D" uid="uid://wp0lkly5k1nm" path="res://YourZoneName/Graphics/DropshipFloor.png" id="1_cuiqn"]
+[ext_resource type="PackedScene" uid="uid://ujow0nweghnm" path="res://YourZoneName/Scenes/Props/Interactive/Terminal.tscn" id="2_cu164"]
+[ext_resource type="PackedScene" uid="uid://bt5pf2g0fxqe5" path="res://YourZoneName/Scenes/Props/Interactive/DropshipTeleporter.tscn" id="3_g4gg2"]
+[ext_resource type="PackedScene" uid="uid://dbqcrnhxpeek5" path="res://YourZoneName/Scenes/Props/Walls/BigWall.tscn" id="4_osn4n"]
+[ext_resource type="PackedScene" uid="uid://d2yqevwofgbiy" path="res://YourZoneName/Scenes/Props/Walls/BigWallCorner.tscn" id="5_xbctv"]
+[ext_resource type="Script" path="res://YourZoneName/Classes/Areas/MonitoredArea.cs" id="6_em136"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nxnop"]
+albedo_texture = ExtResource("1_cuiqn")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_b3x1g"]
+material = SubResource("StandardMaterial3D_nxnop")
+size = Vector2(85, 60)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hq4xj"]
+size = Vector3(85, 1, 60)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3x70o"]
+size = Vector3(85, 1, 60)
+
+[node name="Dropship" type="Node3D"]
+
+[node name="Ground" type="StaticBody3D" parent="."]
+collision_layer = 2
+metadata/_edit_lock_ = true
+
+[node name="Ground" type="MeshInstance3D" parent="Ground"]
+mesh = SubResource("PlaneMesh_b3x1g")
+skeleton = NodePath("../..")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.510281, 0)
+shape = SubResource("BoxShape3D_hq4xj")
+metadata/_edit_lock_ = true
+
+[node name="Terminals" type="Node3D" parent="."]
+
+[node name="Terminal" parent="Terminals" instance=ExtResource("2_cu164")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.9911, -0.0102808, -19.7994)
+TerminalType = 1
+
+[node name="Terminal9" parent="Terminals" instance=ExtResource("2_cu164")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -18.9911, -0.0102808, 11.1724)
+TerminalType = 1
+
+[node name="Terminal10" parent="Terminals" instance=ExtResource("2_cu164")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -14.4902, -0.0102808, 11.1724)
+TerminalType = 1
+
+[node name="Terminal11" parent="Terminals" instance=ExtResource("2_cu164")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.4975, -0.0102808, 11.1724)
+TerminalType = 1
+
+[node name="Terminal12" parent="Terminals" instance=ExtResource("2_cu164")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.99666, -0.0102808, 11.1724)
+TerminalType = 1
+
+[node name="Terminal13" parent="Terminals" instance=ExtResource("2_cu164")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.02314, -0.0102808, 11.1724)
+TerminalType = 1
+
+[node name="Terminal14" parent="Terminals" instance=ExtResource("2_cu164")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.524, -0.0102808, 11.1724)
+TerminalType = 1
+
+[node name="Terminal15" parent="Terminals" instance=ExtResource("2_cu164")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14.5167, -0.0102808, 11.1724)
+TerminalType = 1
+
+[node name="Terminal16" parent="Terminals" instance=ExtResource("2_cu164")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 19.0176, -0.0102808, 11.1724)
+TerminalType = 1
+
+[node name="Terminal2" parent="Terminals" instance=ExtResource("2_cu164")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.4983, -0.0102808, -19.7994)
+TerminalType = 1
+
+[node name="Terminal3" parent="Terminals" instance=ExtResource("2_cu164")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.4786, -0.0102808, -19.7994)
+TerminalType = 1
+
+[node name="Terminal4" parent="Terminals" instance=ExtResource("2_cu164")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00529, -0.0102808, -19.7994)
+TerminalType = 1
+
+[node name="Terminal5" parent="Terminals" instance=ExtResource("2_cu164")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.99623, -0.0102808, -19.7994)
+TerminalType = 1
+
+[node name="Terminal6" parent="Terminals" instance=ExtResource("2_cu164")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.489, -0.0102808, -19.7994)
+TerminalType = 1
+
+[node name="Terminal7" parent="Terminals" instance=ExtResource("2_cu164")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.5088, -0.0102808, -19.7994)
+TerminalType = 1
+
+[node name="Terminal8" parent="Terminals" instance=ExtResource("2_cu164")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.9821, -0.0102808, -19.7994)
+TerminalType = 1
+
+[node name="Teleporters" type="Node3D" parent="."]
+
+[node name="DropshipTeleporter" parent="Teleporters" instance=ExtResource("3_g4gg2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.014, -0.01, -21)
+TeleportLocationName = "North Assault"
+TeleportLocation = Vector3(-100, 0, 121)
+
+[node name="DropshipTeleporter2" parent="Teleporters" instance=ExtResource("3_g4gg2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.7533, -0.01, -21)
+TeleportLocationName = "Death Canyon"
+TeleportLocation = Vector3(131, 0, 121)
+
+[node name="DropshipTeleporter3" parent="Teleporters" instance=ExtResource("3_g4gg2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.1467, -0.01, -21)
+TeleporterEnabled = false
+TeleportLocationName = "Outer Rim"
+
+[node name="DropshipTeleporter4" parent="Teleporters" instance=ExtResource("3_g4gg2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.014, -0.01, 12.272)
+TeleporterEnabled = false
+TeleportLocationName = "Luck Lake"
+
+[node name="DropshipTeleporter5" parent="Teleporters" instance=ExtResource("3_g4gg2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -24.7533, -0.01, 12.272)
+TeleporterEnabled = false
+TeleportLocationName = "Southwest Corner"
+
+[node name="DropshipTeleporter6" parent="Teleporters" instance=ExtResource("3_g4gg2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 25.1467, -0.01, 12.272)
+TeleportLocationName = "SouthEast Corner"
+TeleportLocation = Vector3(-128, 0, -142)
+
+[node name="Walls" type="Node3D" parent="."]
+
+[node name="BigWall" parent="Walls" instance=ExtResource("4_osn4n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, 28.7337)
+
+[node name="BigWall3" parent="Walls" instance=ExtResource("4_osn4n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.9, 0, 28.7337)
+
+[node name="BigWall2" parent="Walls" instance=ExtResource("4_osn4n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.8, 0, 28.7337)
+
+[node name="BigWall4" parent="Walls" instance=ExtResource("4_osn4n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.1, 0, 28.7337)
+
+[node name="BigWall5" parent="Walls" instance=ExtResource("4_osn4n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.6, 0, 28.7337)
+
+[node name="BigWall6" parent="Walls" instance=ExtResource("4_osn4n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.7, 0, 28.7337)
+
+[node name="BigWallCorner" parent="Walls" instance=ExtResource("5_xbctv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.1, 0, 28.7337)
+
+[node name="BigWallCorner2" parent="Walls" instance=ExtResource("5_xbctv")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 41.88, 0, 27.7237)
+
+[node name="BigWall7" parent="Walls" instance=ExtResource("4_osn4n")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 19.7621, 0, -28.4313)
+
+[node name="BigWall8" parent="Walls" instance=ExtResource("4_osn4n")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 32.6621, 0, -28.4313)
+
+[node name="BigWall9" parent="Walls" instance=ExtResource("4_osn4n")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.03785, 0, -28.4313)
+
+[node name="BigWall10" parent="Walls" instance=ExtResource("4_osn4n")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.86215, 0, -28.4313)
+
+[node name="BigWall11" parent="Walls" instance=ExtResource("4_osn4n")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -31.8378, 0, -28.4313)
+
+[node name="BigWall12" parent="Walls" instance=ExtResource("4_osn4n")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -18.9379, 0, -28.4313)
+
+[node name="BigWall13" parent="Walls" instance=ExtResource("4_osn4n")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -41.115, 0, -6.28518)
+
+[node name="BigWall14" parent="Walls" instance=ExtResource("4_osn4n")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -41.115, 0, -19.1852)
+
+[node name="BigWall15" parent="Walls" instance=ExtResource("4_osn4n")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -41.115, 0, 19.5147)
+
+[node name="BigWall16" parent="Walls" instance=ExtResource("4_osn4n")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -41.115, 0, 6.61481)
+
+[node name="BigWall17" parent="Walls" instance=ExtResource("4_osn4n")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 41.88, 0, 6.61469)
+
+[node name="BigWall18" parent="Walls" instance=ExtResource("4_osn4n")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 41.88, 0, 19.5147)
+
+[node name="BigWall19" parent="Walls" instance=ExtResource("4_osn4n")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 41.88, 0, -19.1852)
+
+[node name="BigWall20" parent="Walls" instance=ExtResource("4_osn4n")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 41.88, 0, -6.28531)
+
+[node name="BigWallCorner3" parent="Walls" instance=ExtResource("5_xbctv")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 40.8621, 0, -28.4313)
+
+[node name="BigWallCorner4" parent="Walls" instance=ExtResource("5_xbctv")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -41.1179, 0, -27.4213)
+
+[node name="NoFire" type="Area3D" parent="."]
+collision_layer = 8
+collision_mask = 17
+script = ExtResource("6_em136")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NoFire"]
+shape = SubResource("BoxShape3D_3x70o")
+
+[connection signal="body_entered" from="NoFire" to="NoFire" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="NoFire" to="NoFire" method="_on_Area_body_exited"]

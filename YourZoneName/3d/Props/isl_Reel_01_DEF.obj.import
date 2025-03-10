@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dbgjwdg1van0"
+path="res://.godot/imported/isl_Reel_01_DEF.obj-79387aff1278369cc7505b8f6c94f197.mesh"
+
+[deps]
+
+files=["res://.godot/imported/isl_Reel_01_DEF.obj-79387aff1278369cc7505b8f6c94f197.mesh"]
+
+source_file="res://YourZoneName/3d/Props/isl_Reel_01_DEF.obj"
+dest_files=["res://.godot/imported/isl_Reel_01_DEF.obj-79387aff1278369cc7505b8f6c94f197.mesh", "res://.godot/imported/isl_Reel_01_DEF.obj-79387aff1278369cc7505b8f6c94f197.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

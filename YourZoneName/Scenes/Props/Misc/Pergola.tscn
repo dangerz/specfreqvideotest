@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://v7praj18nf38"]
+
+[ext_resource type="Texture2D" uid="uid://b16kf0g1742og" path="res://YourZoneName/3d/Props/isl_Color_A.jpg" id="1"]
+[ext_resource type="ArrayMesh" uid="uid://6xswymrdnenj" path="res://YourZoneName/3d/Props/isl_Pergola_01_DEF.obj" id="2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_si558"]
+albedo_texture = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="2"]
+size = Vector3(0.352, 2.6, 0.428)
+
+[sub_resource type="BoxShape3D" id="3"]
+size = Vector3(7.3605, 2.06556, 0.428536)
+
+[node name="Pergola" type="StaticBody3D"]
+collision_layer = 8
+
+[node name="isl_Pergola_01_DEF" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1, 0, 0, 0, 1.5, 0, 0, 0)
+mesh = ExtResource("2")
+surface_material_override/0 = SubResource("StandardMaterial3D_si558")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.56366, 1.34246, -2.44312)
+shape = SubResource("2")
+
+[node name="CollisionShape7" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0010581, 1.59064, -2.44312)
+shape = SubResource("3")
+
+[node name="CollisionShape2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.31674, 1.34246, -2.44312)
+shape = SubResource("2")
+
+[node name="CollisionShape3" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.28922, 1.34246, -2.44312)
+shape = SubResource("2")
+
+[node name="CollisionShape4" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.53614, 1.34246, -2.44312)
+shape = SubResource("2")
+
+[node name="CollisionShape5" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.56366, 1.34246, 2.47407)
+shape = SubResource("2")
+
+[node name="CollisionShape6" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.53614, 1.34246, 2.47407)
+shape = SubResource("2")

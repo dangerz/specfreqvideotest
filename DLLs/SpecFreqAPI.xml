@@ -1,0 +1,518 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SpecFreqAPI</name>
+    </assembly>
+    <members>
+        <member name="T:API.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:API.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:API.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="M:API.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:API.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:API.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:API.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="M:API.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:API.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:API.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:CustomZone.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:CustomZone.MethodName._ZoneSetup">
+            <summary>
+            Cached name for the '_ZoneSetup' method.
+            </summary>
+        </member>
+        <member name="M:CustomZone.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:CustomZone.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CustomZone.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:CustomZone.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="M:CustomZone.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CustomZone.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:CustomZone.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="M:CharacterAPI.AddInventorySlot(SpecFreqAPIEnums.InventorySlotType)">
+            <summary>
+            Adds an inventory slot type for this character.
+            </summary>
+            <param name="aSlotType"></param>
+        </member>
+        <member name="M:CharacterAPI.SetCustomModel(CustomModelCharacterAPI)">
+            <summary>
+            Sets a custom 3d model for this character.
+            </summary>
+            <param name="aCustomModelCharacterAPI"></param>
+        </member>
+        <member name="T:CharacterAPI.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:CharacterAPI.MethodName.AddInventorySlot">
+            <summary>
+            Cached name for the 'AddInventorySlot' method.
+            </summary>
+        </member>
+        <member name="F:CharacterAPI.MethodName.SetCustomModel">
+            <summary>
+            Cached name for the 'SetCustomModel' method.
+            </summary>
+        </member>
+        <member name="M:CharacterAPI.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:CharacterAPI.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CharacterAPI.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:CharacterAPI.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:CharacterAPI.PropertyName.Name">
+            <summary>
+            Cached name for the 'Name' property.
+            </summary>
+        </member>
+        <member name="F:CharacterAPI.PropertyName.Description">
+            <summary>
+            Cached name for the 'Description' property.
+            </summary>
+        </member>
+        <member name="F:CharacterAPI.PropertyName.CharacterType">
+            <summary>
+            Cached name for the 'CharacterType' property.
+            </summary>
+        </member>
+        <member name="F:CharacterAPI.PropertyName.HasCustomModel">
+            <summary>
+            Cached name for the 'HasCustomModel' property.
+            </summary>
+        </member>
+        <member name="F:CharacterAPI.PropertyName.CustomModelCharacter">
+            <summary>
+            Cached name for the 'CustomModelCharacter' property.
+            </summary>
+        </member>
+        <member name="M:CharacterAPI.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CharacterAPI.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CharacterAPI.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:CharacterAPI.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CharacterAPI.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:CharacterAPI.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:CustomModelCharacterAPI">
+            <summary>
+            Allows you to create a custom character with model.
+            </summary>
+        </member>
+        <member name="P:CustomModelCharacterAPI.SceneFilePath">
+            <summary>
+            The path to the .tscn of your custom model.
+            Inside of your scene, you must have the following child nodes !! with these exact names and paths starting from the top !!
+            - "PlayerCollider" ColliderShape3D object, used to determine when the character collides with other things.
+                - This can be any shape that you want.
+            - "Weapons" Node3D object, used as a placeholder to put the 3d model for the weapon when it's loaded.  Its position is determined by the *WeaponsLocation/*WeaponsRotation variables.
+            - "PlayerDetailsOverlay/SubViewport/OverlayLabel" Label object, used to put the player name.
+            - "PlayerDetailsOverlay/SubViewport/HealthBar" ProgressBar object, used to display the player health.
+            - "ShootPoint" MeshInstance3d object, used to determine where the projectile starts from when a player shoots.  The projectile will shoot in the direction that the player is pointing.
+            - "Flashlight" SpotLight3D object, turns on when it's dark out.
+            
+            ex.
+            Infantry (CharacterBody3D)
+            - PlayerCollider (ColliderShape3D)
+            - Weapons (Node3D)
+            - InteractiveArea (Area3D)
+            - - InteractiveAreaShape (CollisionShape3D)
+            - PlayerDetailsOverlay (Node3D)
+            - - SubViewport (Viewport)
+            - - - OverlayLabel (Label)
+            - - - HealthBar (ProgressBar)
+            - - PlayerDetailsLabel (Label)
+            - WeaponColliderArea (Area3D)
+            - - WeaponColliderAreaShape (CollisionShape3D)
+            - ShootPoint (MeshInstance3D)
+            - Flashlight (Spotlight3D)
+            </summary>
+        </member>
+        <member name="P:CustomModelCharacterAPI.ModelMeshInstanceFilePath">
+            <summary>
+            The actual 3d model of your object.  The top level node *must be* a Node3D.
+            </summary>
+        </member>
+        <member name="P:CustomModelCharacterAPI.ModelMeshAnimationPath">
+            <summary>
+            The path to your AnimationPlayer object inside of your model mesh.
+            This AnimationPlayer *must have* a Walk, Run, Stand, Shoot animation.  Even if there's no keyframes in there, they must exist as options.
+            </summary>
+        </member>
+        <member name="P:CustomModelCharacterAPI.ModelMeshMeshInstancePath">
+            <summary>
+            The path to the actual MeshInstance for your 3d model.  This is used to apply texture coloring based off the team.
+            </summary>
+        </member>
+        <member name="P:CustomModelCharacterAPI.ModelMeshMaterialTRESFilePath">
+            <summary>
+            The path to the material used to skin your 3d model.
+            </summary>
+        </member>
+        <member name="P:CustomModelCharacterAPI.ModelMeshMaterialTRESBehindObjectsFilePath">
+            <summary>
+            The path to the material used when your model is behind objects.
+            </summary>
+        </member>
+        <member name="T:CustomModelCharacterAPI.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:CustomModelCharacterAPI.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.SceneFilePath">
+            <summary>
+            Cached name for the 'SceneFilePath' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.ModelMeshInstanceFilePath">
+            <summary>
+            Cached name for the 'ModelMeshInstanceFilePath' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.ModelMeshAnimationPath">
+            <summary>
+            Cached name for the 'ModelMeshAnimationPath' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.ModelMeshMeshInstancePath">
+            <summary>
+            Cached name for the 'ModelMeshMeshInstancePath' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.ModelMeshMaterialTRESFilePath">
+            <summary>
+            Cached name for the 'ModelMeshMaterialTRESFilePath' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.ModelMeshMaterialTRESBehindObjectsFilePath">
+            <summary>
+            Cached name for the 'ModelMeshMaterialTRESBehindObjectsFilePath' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.AnimationWalkName">
+            <summary>
+            Cached name for the 'AnimationWalkName' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.AnimationIdleName">
+            <summary>
+            Cached name for the 'AnimationIdleName' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.AnimationShootName">
+            <summary>
+            Cached name for the 'AnimationShootName' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.AnimationRunName">
+            <summary>
+            Cached name for the 'AnimationRunName' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.AllowFootsteps">
+            <summary>
+            Cached name for the 'AllowFootsteps' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.CanDriveVehicles">
+            <summary>
+            Cached name for the 'CanDriveVehicles' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.CanSeeHealth">
+            <summary>
+            Cached name for the 'CanSeeHealth' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.LightOnEnergy">
+            <summary>
+            Cached name for the 'LightOnEnergy' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.MaxStamina">
+            <summary>
+            Cached name for the 'MaxStamina' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.RunMultiplier">
+            <summary>
+            Cached name for the 'RunMultiplier' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.StaminaUse">
+            <summary>
+            Cached name for the 'StaminaUse' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.Stealthy">
+            <summary>
+            Cached name for the 'Stealthy' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.WalkSpeed">
+            <summary>
+            Cached name for the 'WalkSpeed' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.StandingWeaponsLocation">
+            <summary>
+            Cached name for the 'StandingWeaponsLocation' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.StandingWeaponsRotation">
+            <summary>
+            Cached name for the 'StandingWeaponsRotation' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.WalkingWeaponsLocation">
+            <summary>
+            Cached name for the 'WalkingWeaponsLocation' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.WalkingWeaponsRotation">
+            <summary>
+            Cached name for the 'WalkingWeaponsRotation' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.RunningWeaponsLocation">
+            <summary>
+            Cached name for the 'RunningWeaponsLocation' property.
+            </summary>
+        </member>
+        <member name="F:CustomModelCharacterAPI.PropertyName.RunningWeaponsRotation">
+            <summary>
+            Cached name for the 'RunningWeaponsRotation' property.
+            </summary>
+        </member>
+        <member name="M:CustomModelCharacterAPI.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CustomModelCharacterAPI.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CustomModelCharacterAPI.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:CustomModelCharacterAPI.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CustomModelCharacterAPI.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:CustomModelCharacterAPI.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:DoorwayAPI.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:DoorwayAPI.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="M:DoorwayAPI.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:DoorwayAPI.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:DoorwayAPI.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:DoorwaySliderAPI.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:DoorwaySliderAPI.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="M:DoorwaySliderAPI.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:DoorwaySliderAPI.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:DoorwaySliderAPI.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:PlayerAPI.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:PlayerAPI.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="M:PlayerAPI.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:PlayerAPI.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:PlayerAPI.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:VehicleAPI.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:VehicleAPI.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="M:VehicleAPI.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:VehicleAPI.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:VehicleAPI.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:SpecFreqAPI.SceneKey">
+            <summary>
+            This SceneKey must match what you have in your XML configuration files.
+            </summary>
+        </member>
+        <member name="F:SpecFreqAPI.UpperSpecLimit">
+            <summary>
+            Upper Left corner of the area that you want players to be able to spectate.
+            </summary>
+        </member>
+        <member name="F:SpecFreqAPI.LowerSpecLimit">
+            <summary>
+            Bottom Right corner of the area that you want players to be able to spectate.
+            </summary>
+        </member>
+        <member name="F:SpecFreqAPI.CloudsEnabled">
+            <summary>
+            Turns Clouds on or off for your zone.
+            </summary>
+        </member>
+        <member name="P:SpecFreqAPI.CameraOffset">
+            <summary>
+            Sets the camera offset.  This lets you have the camera closer or further from the player.
+            </summary>
+        </member>
+        <member name="P:SpecFreqAPI.CameraSize">
+            <summary>
+            Size of the camera lens.  How much of the map do you want to display?
+            </summary>
+        </member>
+    </members>
+</doc>

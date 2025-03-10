@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://6xswymrdnenj"
+path="res://.godot/imported/isl_Pergola_01_DEF.obj-40365b352ae28fcb5d44746346ac8d84.mesh"
+
+[deps]
+
+files=["res://.godot/imported/isl_Pergola_01_DEF.obj-40365b352ae28fcb5d44746346ac8d84.mesh"]
+
+source_file="res://YourZoneName/3d/Props/isl_Pergola_01_DEF.obj"
+dest_files=["res://.godot/imported/isl_Pergola_01_DEF.obj-40365b352ae28fcb5d44746346ac8d84.mesh", "res://.godot/imported/isl_Pergola_01_DEF.obj-40365b352ae28fcb5d44746346ac8d84.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

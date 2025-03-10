@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=4 uid="uid://d01eptrj6ncdm"]
+
+[ext_resource type="Texture2D" uid="uid://dntvde7qdbppx" path="res://YourZoneName/3d/Landscape/DeadTree.jpg" id="1_ryxp3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_18lbe"]
+albedo_texture = ExtResource("1_ryxp3")
+
+[sub_resource type="ArrayMesh" id="1"]
+resource_name = "Stick4_Mesh014"
+_surfaces = [{
+"aabb": AABB(-3.53283, -5.28242, -42.4851, 7.06566, 8.06072, 42.5757),
+"attribute_data": PackedByteArray("AIBDPgBgeT8AgEM+AGB5PwDAhTwAoHk/AABiPQDgej8AAGI9AOB6PwAAYj0A4Ho/AEASPgCAeD8AQBI+AIB4PwBAEj4AgHg/AODSPQAgeT8A4NI9ACB5PwDg0j0AIHk/AGC/PQDgCD8AYL89AOAIPwBgvz0A4Ag/AGC/PQDgCD8AYBA+AOAvPwCgZz0AgDA/AKCaPQAAMj8AoJo9AAAyPwAAyz0AoDI/AADLPQCgMj8AwPA9AIAxPwDA8D0AgDE/AOApPgBgUT8AABo9AOBRPwAAGj0A4FE/AECIPQDgUj8AQIg9AOBSPwBAiD0A4FI/AKDQPQAgUj8AoNA9ACBSPwCg0D0AIFI/AKAFPgCgUT8AoAU+AKBRPwCgBT4AoFE/"),
+"format": 34359742487,
+"index_count": 60,
+"index_data": PackedByteArray("AgAZAAQABQAdAAsACQAeAAgABgAhAAEAEgARAA0AFQATAA8AFwAUAA4AEAAWAAwAGwAaABIAIAAcABUAIwAfABcAGAAiABAAAwAaABsACgAcACAABwAfACMAAAAiABgAEgAaABEAFQAcABMAFwAfABQAEAAiABYA"),
+"material": SubResource("StandardMaterial3D_18lbe"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("3xliwOJ5vD85UkG+3xliwOJ5vD85UkG+3xliwOJ5vD85UkG+bc7hParPMUDp1Ck9bc7hParPMUDp1Ck9bc7hParPMUDp1Ck9qPz2v6+TQMBvDQ++qPz2v6+TQMBvDQ++qPz2v6+TQMBvDQ++/FPbP+UB2r8bdLk9/FPbP+UB2r8bdLk9/FPbP+UB2r8bdLk9YU1PwFXvtL+/8CnCYU1PwFXvtL+/8CnCYU1PwFXvtL+/8CnCYU1PwFXvtL+/8CnCJks7P/nuOMBmsN3BJks7P/nuOMBmsN3Bm1ArQIBPDMCftNzBm1ArQIBPDMCftNzB1hliQNm5ksDwftzB1hliQNm5ksDwftzBAzjLP5IJqcC5et3BAzjLP5IJqcC5et3B0E9rvxtj3L8tbXLB0E9rvxtj3L8tbXLB0E9rvxtj3L8tbXLB0m7mP1U8P78vrW/B0m7mP1U8P78vrW/B0m7mP1U8P78vrW/BRc8/QBH0gsAUF2/BRc8/QBH0gsAUF2/BRc8/QBH0gsAUF2/BOR+OPkslosAU13HBOR+OPkslosAU13HBOR+OPkslosAU13HBQqCy2L1e3O5CoLLYs1ne76DPyGTC4aLRoM/IZMLhotGgz8hkwuGi0bZbQCA5nSmVQqCy2LNZ3u84HFytRCJerzgcXK1CIVyuOBxcrUIhXK62W0AgO54lk7ZbQCA5nSmVYrDI489n0OjE4aBQvN6w2G43OpxiMVqtymVqNUekG45OpsLgyWTO58DftFrC4a7Xvt66XcTirNbCYVYrS6Ydj1IpQqBcLl6vwGBUKkmlHY9MpcDfyWTO51gsQJ9cLl6vQqCy2L1e3O6m0sRiwOCi0abSxGLC4aTSptLEYsLhotG2W0AgPZ8lk7ZbQCA5nSmVPB5UqUIhXK48HlSpRiNer7ZbQCA7niWTQqCy2LNZ3u9CoLLYvV7a7TweVKlGI16v")
+}]
+
+[sub_resource type="BoxShape3D" id="3"]
+size = Vector3(0.246586, 1.38703, 0.32601)
+
+[node name="Stick4" type="StaticBody3D"]
+collision_layer = 8
+
+[node name="Grass_002" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.03, 0, 0, 0, -1.31134e-09, -0.03, 0, 0.03, -1.31134e-09, 0, 0, 0)
+mesh = SubResource("1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.657949, -0.0544413)
+shape = SubResource("3")
+disabled = true

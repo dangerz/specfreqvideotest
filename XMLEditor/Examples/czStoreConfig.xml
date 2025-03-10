@@ -1,0 +1,7 @@
+<config>
+	<ClientPort>61582</ClientPort>
+	<ServerPort>61583</ServerPort>
+	<Database>sqlite</Database>
+	<SQLLiteConnectionString>Data Source=storeDatabase.db; Version = 3; New = True; Compress = True;</SQLLiteConnectionString>
+	<MySQLConnectionString>Server=specfreqgame.com;Port=3306;Database=specfreq;Userid=specfreq;Password=nicetryialreadydeletedit;</MySQLConnectionString>
+</config>

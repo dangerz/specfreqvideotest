@@ -1,0 +1,13 @@
+<Project Sdk="Godot.NET.Sdk/3.3.0">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SpecFreqZone">
+      <HintPath>DLLs\SpecFreqZone.dll</HintPath>
+    </Reference>
+    <Reference Include="Steamworks.NET">
+      <HintPath>DLLs\Steamworks.NET.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

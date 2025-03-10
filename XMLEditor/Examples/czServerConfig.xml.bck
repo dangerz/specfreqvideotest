@@ -1,0 +1,28 @@
+<config>
+	<BannedWordsFile>C:\Users\Roy\Documents\Godot\Export\Chat\BannedWords.txt</BannedWordsFile>
+	<BotManagerExecutablePath>C:\Users\Roy\Documents\Godot\Export\BotManager\BotManager.exe</BotManagerExecutablePath>
+	<BotManagerPassword>nicetryialreadydeletedit</BotManagerPassword>
+	<EnableBots>false</EnableBots>
+	<RestartBotManager>false</RestartBotManager>
+	<BotManagerStartTime>5</BotManagerStartTime>
+	<BotManagerStopTime>10</BotManagerStopTime>
+	<LocalIP>127.0.0.1</LocalIP>
+	<ChatIP>127.0.0.1</ChatIP>
+	<ChatPort>07184</ChatPort>
+	<StoreIP>127.0.0.1</StoreIP>
+	<StoreClientPort>61582</StoreClientPort>
+	<StoreServerPort>61583</StoreServerPort>
+	<RequiresSteamId>false</RequiresSteamId>
+	<AllowedZoneVersions>
+		<Version>b.30</Version>
+	</AllowedZoneVersions>
+	<ZoneKey>cz</ZoneKey>
+	<CustomZoneSceneFilename>DesertZone.pck</CustomZoneSceneFilename>
+	<CustomZoneDLL>DesertZone.dll</CustomZoneDLL>
+	<CustomZoneSceneName>DesertZone/Scenes/Zone.tscn</CustomZoneSceneName>
+	<CustomZoneSceneURL>Zone.pck</CustomZoneSceneURL>
+	<CustomZoneSceneMD5>CCBE6D69F1BB631462F41614DF4F74BC</CustomZoneSceneMD5>
+	<Database>sqlite</Database>
+	<SQLLiteConnectionString>Data Source=serverDatabase.db; Version = 3; New = True; Compress = True;</SQLLiteConnectionString>
+	<MySQLConnectionString>Server=specfreqgame.com;Port=3306;Database=specfreq;Userid=specfreq;Password=nicetryialreadydeletedit;</MySQLConnectionString>
+</config>

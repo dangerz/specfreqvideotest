@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://dm705ja2hevkf"]
+
+[ext_resource type="PackedScene" uid="uid://d33tt4sb1x1x1" path="res://YourZoneName/3d/Props/PowerLineDown.glb" id="1"]
+[ext_resource type="Texture2D" uid="uid://cykixckg4hofv" path="res://YourZoneName/3d/Props/T_Elextrical_Wire_Pipings_Base_color.jpg" id="2"]
+
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_px5jq"]
+albedo_texture = ExtResource("2")
+
+[node name="PowerLineDown" instance=ExtResource("1")]
+
+[node name="SM Power Cable Down Turn" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -8.5)
+surface_material_override/0 = SubResource("StandardMaterial3D_px5jq")

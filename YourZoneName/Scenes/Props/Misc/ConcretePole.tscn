@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://cg7g64fs0iiji"]
+
+[ext_resource type="ArrayMesh" uid="uid://csmhuwkaxcqen" path="res://YourZoneName/3d/Props/isl_SelfRaisingBeacon_05_DEF.obj" id="2"]
+[ext_resource type="Texture2D" uid="uid://b16kf0g1742og" path="res://YourZoneName/3d/Props/isl_Color_A.jpg" id="2_6gr7d"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3wsva"]
+albedo_texture = ExtResource("2_6gr7d")
+
+[sub_resource type="BoxShape3D" id="2"]
+size = Vector3(0.343062, 0.772876, 0.343062)
+
+[node name="ConcretePole" type="StaticBody3D"]
+collision_layer = 8
+
+[node name="isl_SelfRaisingBeacon_05_DEF" type="MeshInstance3D" parent="."]
+mesh = ExtResource("2")
+surface_material_override/0 = SubResource("StandardMaterial3D_3wsva")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.374608, 0)
+shape = SubResource("2")

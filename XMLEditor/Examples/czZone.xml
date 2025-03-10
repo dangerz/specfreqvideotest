@@ -1,0 +1,109 @@
+<Zone>
+	<Key>cz</Key>
+	<Name>Your Zone Name</Name>
+	<GameMode>CTF</GameMode>
+	<FriendlyFire>false</FriendlyFire>
+	<WarzoneTeamId>t1</WarzoneTeamId>
+	<Weather clouds="true">
+		<Snow frequency="random" length="short" min="high" max="high" />
+		<Snow frequency="random" length="medium" min="medium" max="medium" />
+		<Snow frequency="random" length="long" min="low" max="low" />
+		<Snow frequency="random" length="long" min="low" max="low" />
+		<Snow frequency="random" length="long" min="low" max="low" />
+		<Snow frequency="random" length="long" min="low" max="low" />
+		<Snow frequency="random" length="long" min="low" max="low" />
+		<Snow frequency="random" length="long" min="low" max="low" />
+		<Snow frequency="random" length="long" min="low" max="low" />
+		<Snow frequency="random" length="long" min="low" max="low" />
+		<Snow frequency="random" length="long" min="low" max="low" />
+		<Snow frequency="random" length="long" min="low" max="low" />
+		<Snow frequency="random" length="long" min="low" max="low" />
+		<Snow frequency="random" length="long" min="low" max="low" />
+		<Snow frequency="random" length="long" min="low" max="low" />
+		<Snow frequency="random" length="long" min="low" max="low" />
+		<Snow frequency="random" length="long" min="low" max="low" />
+		<Snow frequency="random" length="long" min="low" max="low" />
+	</Weather>
+	<DefaultSpawnPoint>
+		<SpawnPosition x="342" y="0" z="-141" Radius="10" />
+	</DefaultSpawnPoint>
+	<CustomTeamData Color="#9c9a00">
+		<SpawnPosition x="-275" y="0" z="-366" Radius="10" />
+	</CustomTeamData>
+	<BotTeamData Name="Security Forces" Password="b0t13h0tt13" Color="#999999">
+		<SpawnPosition x="58" y="0" z="-14" Radius="10" />
+	</BotTeamData>
+	<CTFFlagCaptureRate>5</CTFFlagCaptureRate>
+	<CTFTeamWinRate>0.25</CTFTeamWinRate>
+	<MaxCTFScoreToWin>100</MaxCTFScoreToWin>
+	<Characters>
+		<Character id="0" MaxHealth="100" />
+	</Characters>
+	<Flags>
+		<Flag Name="Sector 1" Color="#0000ff" Moveable="true" RevealOnMap="true">
+			<Position x="2" y="0" z="-25" />
+		</Flag>
+		<Flag Name="Sector 2" Color="#00ff00" Moveable="false" RevealOnMap="true">
+			<Position x="-148" y="0" z="-157" />
+		</Flag>
+		<Flag Name="Sector 3" Color="#ff0000" Moveable="true" RevealOnMap="true">
+			<Position x="-146" y="0" z="157" />
+		</Flag>
+	</Flags>
+	<Teams>
+		<Team id="t1" Name="Wolverines" MinPlayers="1" MaxPlayers="32" Color="#00079c">
+			<SpawnPosition x="342" y="0" z="-141" Radius="10" />
+		</Team>
+		<Team id="t2" Name="Spartans" MinPlayers="1" MaxPlayers="32" Color="#9c0000">
+			<SpawnPosition x="-374" y="0" z="166" Radius="10" />
+		</Team>
+	</Teams>
+	<Vehicles>
+		<Vehicle Name="Tank" type="Tank" MaxHealth="200" MaxPassengers="2" BulletProof="true">
+			<Position x="-157" y="0" z="139" />
+			<Rotation x="0" y="-45" z="0" />			
+		</Vehicle>
+		<Vehicle Name="Tank" type="Tank" MaxHealth="200" MaxPassengers="2" BulletProof="true">
+			<Position x="0" y="0" z="139" />
+			<Rotation x="0" y="0" z="0" />			
+		</Vehicle>
+		<Vehicle Name="STank" type="STank" MaxHealth="200" MaxPassengers="2" BulletProof="true">
+			<Position x="-170" y="0" z="-174" />
+			<Rotation x="0" y="10" z="0" />				
+		</Vehicle>
+		<Vehicle Name="STank" type="STank" MaxHealth="200" MaxPassengers="2" BulletProof="true">
+			<Position x="-123" y="0" z="-174" />
+			<Rotation x="0" y="95" z="0" />				
+		</Vehicle>
+		<Vehicle Name="SideBySide" type="SideBySide" MaxHealth="55" MaxPassengers="4" BulletProof="false">
+			<Position x="-170" y="0" z="118" />
+			<Rotation x="0" y="91" z="0" />			
+		</Vehicle>
+		<Vehicle Name="SideBySide" type="SideBySide" MaxHealth="55" MaxPassengers="4" BulletProof="false">
+			<Position x="-91" y="0" z="142" />
+			<Rotation x="0" y="0" z="0" />			
+		</Vehicle>
+		<Vehicle Name="SideBySide" type="SideBySide" MaxHealth="55" MaxPassengers="4" BulletProof="false">
+			<Position x="-86" y="0" z="142" />
+			<Rotation x="0" y="0" z="0" />			
+		</Vehicle>
+		<Vehicle Name="SideBySide" type="SideBySide" MaxHealth="55" MaxPassengers="4" BulletProof="false">
+			<Position x="-80" y="0" z="142" />
+			<Rotation x="0" y="45" z="0" />			
+		</Vehicle>
+		<Vehicle Name="LightMech1" type="LightMech1" MaxHealth="155" MaxPassengers="1" BulletProof="false">
+			<Position x="147" y="0" z="167" />
+			<Rotation x="0" y="45" z="0" />			
+		</Vehicle>
+		<Vehicle Name="LightMech1" type="LightMech1" MaxHealth="155" MaxPassengers="1" BulletProof="false">
+			<Position x="177" y="0" z="161" />
+			<Rotation x="0" y="0" z="0" />			
+		</Vehicle>
+	</Vehicles>
+	<Weapons>
+		<Weapon name="" id="2" ArmorPiercing="true" />
+		<Weapon name="" id="3" ArmorPiercing="true" />
+		<Weapon name="" id="8" ArmorPiercing="true" />
+		<Weapon name="" id="11" ArmorPiercing="true" />
+	</Weapons>
+</Zone>

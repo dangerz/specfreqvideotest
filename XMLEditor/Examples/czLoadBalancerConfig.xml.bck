@@ -1,0 +1,17 @@
+<config>
+	<BannedWordsFile>C:\Users\Roy\Documents\Godot\Export\Chat\BannedWords.txt</BannedWordsFile>
+	<ExecutablePath>C:\Users\Roy\Documents\Godot\Export\Server\SpecFreqServer.exe</ExecutablePath>
+	<ServerConfigFilename>C:\Users\Roy\Documents\Godot\Export\Server\dzServerConfig.xml</ServerConfigFilename>
+	<ExtraParameters>--headless</ExtraParameters>
+	<LocalIPAddress>127.0.0.1</LocalIPAddress>
+	<RemoteIPAddress>127.0.0.1</RemoteIPAddress>
+	<ZoneToLoadBalancerPort>6040</ZoneToLoadBalancerPort>
+	<ServerToLoadBalancerPort>6041</ServerToLoadBalancerPort>
+	<StartServerPort>64015</StartServerPort>
+	<MaxAllowedArenas>10</MaxAllowedArenas>
+	<MaxPlayersPerArena>32</MaxPlayersPerArena>
+	<ZoneKey>dz</ZoneKey>
+	<Database>sqlite</Database>
+	<SQLLiteConnectionString>Data Source=serverDatabase.db; Version = 3; New = True; Compress = True;</SQLLiteConnectionString>
+	<MySQLConnectionString>Server=specfreqgame.com;Port=3306;Database=specfreq;Userid=specfreq;Password=N!Zd@Sk9E/r4Qc();</MySQLConnectionString>
+</config>

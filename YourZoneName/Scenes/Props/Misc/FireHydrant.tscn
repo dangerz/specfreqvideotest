@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://cilrkvbaq6v2w"]
+
+[ext_resource type="Texture2D" uid="uid://b16kf0g1742og" path="res://YourZoneName/3d/Props/isl_Color_A.jpg" id="1"]
+[ext_resource type="ArrayMesh" uid="uid://xv4yaf2p4vkb" path="res://YourZoneName/3d/Props/FireHydrant.obj" id="2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e18ie"]
+albedo_texture = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="2"]
+size = Vector3(0.713782, 1.11133, 0.58714)
+
+[node name="FireHydrant" type="StaticBody3D"]
+collision_layer = 8
+
+[node name="FireHydrant" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+mesh = ExtResource("2")
+surface_material_override/0 = SubResource("StandardMaterial3D_e18ie")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.548906, 0.014071)
+shape = SubResource("2")

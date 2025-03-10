@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://csmhuwkaxcqen"
+path="res://.godot/imported/isl_SelfRaisingBeacon_05_DEF.obj-25123346d05b4a554fb6e584d5fe5e46.mesh"
+
+[deps]
+
+files=["res://.godot/imported/isl_SelfRaisingBeacon_05_DEF.obj-25123346d05b4a554fb6e584d5fe5e46.mesh"]
+
+source_file="res://YourZoneName/3d/Props/isl_SelfRaisingBeacon_05_DEF.obj"
+dest_files=["res://.godot/imported/isl_SelfRaisingBeacon_05_DEF.obj-25123346d05b4a554fb6e584d5fe5e46.mesh", "res://.godot/imported/isl_SelfRaisingBeacon_05_DEF.obj-25123346d05b4a554fb6e584d5fe5e46.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://bcfb00o8v6nhp"]
+
+[ext_resource type="Texture2D" uid="uid://b16kf0g1742og" path="res://YourZoneName/3d/Props/isl_Color_A.jpg" id="1"]
+[ext_resource type="ArrayMesh" uid="uid://ckbwtmk7tdc0o" path="res://YourZoneName/3d/Props/isl_Pipe_01_DEF.obj" id="2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tj4t2"]
+albedo_texture = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="2"]
+size = Vector3(8.71676, 1.63113, 1.60383)
+
+[node name="Pipe" type="StaticBody3D"]
+collision_layer = 8
+collision_mask = 17
+
+[node name="isl_Pipe_01_DEF" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.43064, 0.450859, 0, -0.450859, 1.43064, 0.108452, 0, 0.0977173)
+mesh = ExtResource("2")
+surface_material_override/0 = SubResource("StandardMaterial3D_tj4t2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.113282, 0.839305, 0.101358)
+shape = SubResource("2")

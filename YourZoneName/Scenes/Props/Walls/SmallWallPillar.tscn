@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=4 uid="uid://by1at7pykvwfq"]
+
+[ext_resource type="Texture2D" uid="uid://dqai2cbi4w6jv" path="res://YourZoneName/3d/Props/T_Walls_Windows_Doorways_Pillars_Base_color.png" id="1"]
+[ext_resource type="Script" path="res://YourZoneName/Classes/Structures/Wall.cs" id="2"]
+
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6guas"]
+albedo_texture = ExtResource("1")
+
+[sub_resource type="ArrayMesh" id="1"]
+resource_name = "SmallWallPillar_Cube002"
+_surfaces = [{
+"aabb": AABB(-1, 1.19209e-07, -1.23776, 1, 3.04225, 2.47554),
+"attribute_data": PackedByteArray("AAAAOgAgMD8AAEw+AGBWPwAATD4AYFY/AABMPgCAIT8AAEw+AIAhPwAATD4AgCE/AGCHPgBgVj8AYIc+AGBWPwAg7T4AIDA/AGCHPgCAIT8AYIc+AIAhPwBghz4AgCE/AAAAOgCgBj8AAEw+AOB/PwAATD4AwMA+AABMPgBAFT8AAEw+AEAVPwAATD4AQBU/AGCHPgDgfz8AYIc+AMDAPgAg7T4AoAY/AGCHPgBAFT8AYIc+AEAVPwBghz4AQBU/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AQASAA0AAQAGABIABwAEAAkABwACAAQACgARABYACgAFABEACAAXABQACAALABcAEwAQAA4AEwAVABAADAADAAAADAAPAAMA"),
+"material": SubResource("StandardMaterial3D_6guas"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AACAvwAAADQJb54/AACAvwAAADQJb54/AACAvwAAADQJb54/AACAv0i0QkBzobo+AACAv0i0QkBzobo+AACAv0i0QkBzobo+AAAAAAAAADQJb54/AAAAAAAAADQJb54/AAAAAAAAADQJb54/AAAAAEi0QkBzobo+AAAAAEi0QkBzobo+AAAAAEi0QkBzobo+AACAvwAAADQJb56/AACAvwAAADQJb56/AACAvwAAADQJb56/AACAv0i0QkBzobq+AACAv0i0QkBzobq+AACAv0i0QkBzobq+AAAAAAAAADQJb56/AAAAAAAAADQJb56/AAAAAAAAADQJb56/AAAAAEi0QkBzobq+AAAAAEi0QkBzobq+AAAAAEi0QkBzobq+AYAAAP9///8AAAGA//9+vwAAOBz8/n6/AYAAAP9///8AADgc/P5+vwAA/3///36/AAABgP//fr8AADgc/P5+v/9/AAD/fwGBAAA4HP//fr8AAP9///9+v/9/AAD/fwGBAYAAAP9///8AAAGA//9+v8Ri/3///36/AYAAAP9////EYv9//P5+vwAA/3///36/AAABgP//fr/EYv9//P5+v/9/AAD/fwGBxGL/f/z+fr8AAP9///9+v/9/AAD/fwGB")
+}]
+
+[sub_resource type="BoxShape3D" id="2"]
+size = Vector3(1, 3, 2)
+
+[node name="SmallWallPillar" type="StaticBody3D"]
+collision_layer = 8
+script = ExtResource("2")
+Mesh = NodePath("SM Wall Pillar Connector")
+
+[node name="SM Wall Pillar Connector" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.79589, 0.5, 0, 0)
+mesh = SubResource("1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1.5, 0)
+shape = SubResource("2")
